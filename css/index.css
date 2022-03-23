@@ -1,0 +1,225 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #0c122c;
+    background-image: url("/images/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 1px 390px;
+    background-size: cover;
+    height: 50vh;
+    
+}
+    
+  .area{
+      margin-top: 300px;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: auto;
+      
+  }
+.box1{
+    position: relative;
+    width: 330px;
+    height: 180px;
+    left: 400px;
+    background-color: #1e2c69;
+    border-radius: 10px 80px 10px 10px;
+
+}
+.icon{
+    max-width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d1229;
+    margin-top: 10px;
+    border-radius: 10px;
+
+
+}
+.logo{
+    
+    display: inline-table;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 1/span 3;
+    margin-left: -25px;
+
+}
+
+.container1{
+    display: grid;
+    grid-template-columns: repeat(3,50px);
+    grid-template-rows: auto;
+    margin-left: 30px;
+    margin-top: 30px;
+    position: absolute;
+    gap: 10px;
+
+
+}
+.box2{
+    z-index: -2;
+    background-color: #1d2c67;
+    max-width: 600px;
+    height: 140px;
+    margin-top: 40px;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 1%;
+    margin-right: 35%;
+}
+.text{
+    color: white;
+    font-family: 'Raleway', sans-serif;  
+    font-weight: lighter;  
+    margin: 30px 20px 10px;
+}
+.progress{
+  max-width: 100%;
+  max-width: 85%;
+  height: 15px;
+  background-color: #151e49;
+  border-radius: 8px;
+  margin-left: 30px;
+  overflow: hidden;
+  padding: 0.5%;
+  
+} 
+  .progress-bar
+  {
+    display: block;
+    height: 100%;
+    border-radius: 8px;
+    max-width: 80%;
+    background: linear-gradient(90deg,#fe9e96,#fe7096 17%,#fb5492 34%);
+  }
+ .progress-circle{
+     position: relative;
+    height: 15px;
+    max-width: 15px;
+    border-radius: 90px 90px 90px 90px;
+    background: white;
+    margin-left: 72.5%;
+    margin-top: -16.5px;
+ }
+ .con{
+     display: flex;
+     justify-content: space-between;
+     color: white;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bold;
+     margin: 0px 30px 30px 30px;
+
+ }
+ 
+ .sd2{
+    position: relative;
+    height: 68px;
+    background-color: #fff;
+    top: -209px;
+    left: 60%;
+    width: 140px;
+    border-radius: 10px 10px 0px 10px;
+    z-index: 1;    
+ }
+ .sd2::before{
+     position: absolute;
+     content: '';
+     width: 41px;
+     height: 45px;
+     top: 40%;
+     left: 98.9px;
+     background-color: #fff;
+     transform: skewY(40deg);
+     z-index: -1;
+     
+ }
+p{
+    font-size: 14px;
+}
+.sd2>p{
+    font-family: 'Raleway', sans-serif;
+     font-weight: bold;
+     color: black ;
+     font-size: 35px;
+     padding-top: 10px;
+     padding-left: 10px;
+
+    
+    }
+.sd1-1{
+    color: #757677c0;
+    font-family: 'Raleway', sans-serif;
+     font-size: 15px;
+}
+
+.attribution{
+    display: flex;
+    justify-content: center;
+    top: -90%;
+    margin-top:17%;
+}
+.s{
+    font-weight: bold;
+}
+@media screen and (max-width:591px) {
+    body{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        background-image: url("/images/bg-mobile.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        -o-background-size: 100% 100%, auto;
+        -moz-background-size: 100% 100%, auto;
+        -webkit-background-size: 100% 100%, auto;
+        background-size: 100% 100%, auto;
+        
+    }
+    .area{
+        width: 400px;
+        margin-left: 0px;
+        padding: 0px;
+        margin: 0px;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        
+    }
+  .box1{
+      top: 50%;
+      left: 40px;
+      width: 320px;
+      background-color: #1e2c69;
+      border-radius: 10px 80px 10px 10px;
+  }
+  .box2{
+    margin-top: 50%;  
+    right: 90px;
+    width: 88%;
+    width: 330px;
+    height: 180px;
+    margin-left: 40px;
+
+}
+.sd2
+{
+    margin-top: 65%;
+    height: 80px;
+    width: 200px;
+    left: 20%;
+    overflow: hidden;
+    border-bottom-right-radius: 10px;
+}
+.sd2>p{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.attribution{
+    margin-top: 350px;
+}
+}
